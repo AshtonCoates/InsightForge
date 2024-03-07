@@ -17,9 +17,9 @@
                 InsightForge is a tool used to categorize open-ended survey questions quickly and
                 efficiently using AI.
             </p>
-            <form action="/" method="post" enctype="multipart/form-data">
-                <label for="codes">Codes: <input id="codes" type="text" placeholder="Enter codes here"></label>
-                <label for="datafile">Datafile: <input id="datafile" type="file" accept=".csv, .xls, .xlsx"/></label>
+            <form action="/" method="POST" enctype="multipart/form-data">
+                <label for="codes">Codes: <input id="codes" name="codes" type="text" placeholder="Enter codes here"></label>
+                <label for="datafile">Datafile: <input id="datafile" name="datafile" type="file" accept=".csv, .xls, .xlsx"/></label>
                 <button type="submit">Submit</button>
             </form>
         <script src="{{ url_for('static', filename='app.js') }}" async defer></script>
