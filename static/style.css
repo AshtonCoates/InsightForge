@@ -1,0 +1,26 @@
+/* Reset default styles */
+body, h1, p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 50px;
+    text-align: center; /* Added for center alignment */
+    padding: 3px;
+}
+
+h1 {
+    color:#8b11d6;
+}
+
+label {
+    display: block;
+    margin: 15px 0;
+}
+
+form {
+    margin-top: 10px; /* Add space above the form */
+    margin-bottom: 10px; /* Add space below the form */
+}
+
+body {
+    outline: 10px solid #c4c4c4; /* Add a light grey border around the body */
+    background-color: rgb(239, 195, 251)
+}

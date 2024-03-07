@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>InsightForge</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+        <body>
+            <h1>InsightForge</h1>
+            <!--[if lt IE 7]>
+                <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+            <p>
+                InsightForge is a tool used to categorize open-ended survey questions quickly and
+                efficiently using AI.
+            </p>
+            <form action="/" method="post" enctype="multipart/form-data">
+                <label for="codes">Codes: <input id="codes" type="text" placeholder="Enter codes here"></label>
+                <label for="datafile">Datafile: <input id="datafile" type="file" accept=".csv, .xls, .xlsx"/></label>
+                <button type="submit">Submit</button>
+            </form>
+        <script src="{{ url_for('static', filename='app.js') }}" async defer></script>
+    </body>
+</html>
